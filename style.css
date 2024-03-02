@@ -83,6 +83,13 @@ main .top .text__rocket .text__ai p {
     line-height: 29px;
 }
 
+main .top .text__rocket .text__ai .buttons {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 main .top .text__rocket .text__ai button {
     color: white;
     font-size: 20px;
@@ -121,7 +128,6 @@ main .top__logo {
 }
 
 main .top__logo .logo {
-    padding-top: 100px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -234,6 +240,13 @@ main .top__content .top2__brain .text__brain .text__br p {
     margin-top: 30px;
 }
 
+main .top__content .top2__brain .text__brain .text__br .button__lern {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 main .top__content .top2__brain .text__brain .text__br button {
     color: white;
     font-size: 16px;
@@ -279,6 +292,8 @@ main .top__content .top2__bloks1 .bloks1 h1 {
     font-weight: 700;
     line-height: 31px;
     text-align: center;
+    margin: 0 20px;
+    opacity: 70%;
 }
 
 main .top__content .top2__bloks1 .bloks1 p {
@@ -390,9 +405,6 @@ main .footer {
     font-family: Roboto;
     color: white;
     margin-bottom: 45px;
-    justify-content: flex-start;
-
-
 }
 
 main .footer .footer__bar {
@@ -400,23 +412,30 @@ main .footer .footer__bar {
     width: 100%;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+}
 
+main .footer .footer__bar .info {
+    display: flex;
+    width: 66.666666%;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer__left {
     width: 362px;
-    margin: 30px 30px;
+
 }
 
 .footer__center {
-    width: 362px;
-    margin: 30px 30px;
+    width: 280px;
+
 
 }
 
 .footer__right {
     width: 362px;
-    margin: 30px 30px;
+
 }
 
 main .footer h1 {
@@ -462,4 +481,154 @@ main .footer .img {
         flex-direction: column;
         align-items: center;
     }
+
+    main .footer {
+        max-width: 768px;
+    }
+
+    main .footer .footer__bar .info {
+
+        width: 100%;
+
+    }
+
+    main .footer .footer__bar {
+        justify-content: flex-start;
+    }
+
+    .footer__right {
+        margin-left: 70px;
+        margin-top: 40px;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+    header .menu__container {
+        gap: 0px;
+    }
+
+    header .menu__container .menu__link {
+        width: auto;
+    }
+
+    header .menu__container .menu__link a {
+        font-size: 14px;
+    }
+
+    main .top {
+        padding-top: 60px;
+    }
+
+    main .top .text__rocket .text__ai h5 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    main .top .text__rocket .text__ai h1 {
+        font-size: 28px;
+        text-align: center;
+        line-height: 36px;
+    }
+
+    main .top .text__rocket .text__ai p {
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    main .top .text__rocket .text__ai .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .top .text__rocket .img {
+
+        margin: 15px;
+    }
+
+    main .top__logo {
+        padding-top: 130px;
+
+    }
+
+    main .top__logo .logo {
+        gap: 30px;
+    }
+
+    main .top__content .top2__brain {
+        padding-top: 100px;
+    }
+
+    main .top__content .top2__brain .text__brain .img {
+        margin: 15px;
+    }
+
+    main .top__content .top2__brain .text__brain .text__br h1 {
+        font-size: 24px;
+        line-height: 31px;
+        text-align: center;
+    }
+
+    main .top__content .top2__brain .text__brain .text__br p {
+        margin-right: 0px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    main .top__content .top2__brain .text__brain .text__br .button__lern {
+        justify-content: center;
+    }
+
+    main .top__content .top2__brain .text__brain .text__br button {
+        margin-top: 15px;
+    }
+
+    main .top__content .top2__bloks1 {
+        padding-top: 100px;
+
+    }
+
+    main .top__content .top2__brain {
+        padding-top: 0px;
+    }
+
+    main .top__content .top2__brain .text__brain .text__br h1 {
+        margin: 0 20px;
+    }
+
+    main .top__content .top2__brain .text__brain .text__br p {
+        margin: 15px 20px;
+    }
+
+    main .top__content {
+        padding-bottom: 100px;
+    }
+
+    main .footer .footer__bar {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    main .footer .footer__bar .info {
+        flex-direction: column-reverse;
+    }
+
+    .footer__left {
+        margin-top: 30px;
+        margin-left: 20px;
+
+    }
+
+    .footer__center {
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+
+    .footer__right {
+        margin-left: 100px;
+    }
+
 }
